@@ -1,0 +1,8 @@
+name: CustomList
+main: wortie\CustomList\Main
+version: 1.0.0
+api: 3.14.0
+load: STARTUP
+author: wortie
+depend: PureChat
+description: A Simple Custom List Command for PureChat.
