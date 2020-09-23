@@ -11,7 +11,7 @@ class Main extends PluginBase {
 
 	public function onEnable(): void {
         $pureChat = $this->getServer()->getPluginManager()->getPlugin("PureChat");
-		if($pureChat === null or $pureChat->isEnabled() === false){
+		if(is_null($pureChat)){
 			$this->getServer()->getPluginManager()->disablePlugin($this);
 			$this->getLogger()->critical("PureChat was not found, Plugin: CustomList Disabled");
 			return;

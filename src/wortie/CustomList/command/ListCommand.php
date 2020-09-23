@@ -13,7 +13,7 @@ use function array_map;
 
 class ListCommand extends Command{
     
-	public function __construct(String $description, String $usage, String $noperm, String $perm) {
+	public function __construct(String $description, String $usage, String $noperm, String $perm): void {
         parent::__construct("list", $description, $usage);
         $this->setPermissionMessage($noperm);
         $this->setPermission($perm);
